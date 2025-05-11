@@ -1,0 +1,168 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2057{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 April 8,2025\par
+Summary:\par
+\par
+The training session focused on developing a Spring web application, where Kartikey Singh provided a comprehensive guide on project setup and management. He began by organizing project submissions and selecting necessary dependencies, such as the MySQL driver and Spring web. Throughout the demonstration, he addressed various technical challenges, including project loading issues and compatibility adjustments related to Java and Spring Boot versions. The session emphasized the significance of proper project structure and management in Spring application development.\par
+\par
+Kartikey further elaborated on the Model-View-Controller (MVC) architecture, detailing the roles of the model, view, and controller within a Spring application. He demonstrated the setup of database credentials and the use of JDBC for efficient database interactions, including implementing a JDBC template for fetching data. The session also covered the configuration of the hobby management application, including handling requests through different layers and implementing features like adding hobbies. Kartikey concluded by encouraging participants to ask questions, ensuring clarity on the processes discussed.\par
+\par
+Chapters & Topics:\par
+\par
+Spring Web Application Development\par
+Kartikey Singh led a session on building a Spring web application, where he instructed participants to upload their projects in designated folders. He demonstrated the setup process by sharing his screen, focusing on configuring the project with necessary dependencies like the MySQL driver and Spring web. Issues with project loading were addressed, and Kartikey attempted to resolve them by re-importing the project.\par
+* Dependencies required for Spring web application development.\par
+* Configuration of Java and Spring Boot versions.\par
+\par
+Spring MVC Application Development\par
+Kartikey Singh walked through the steps of creating a Spring MVC application, including initializing the server and setting up a controller to return JSP pages. He faced challenges with file rendering, which he attributed to potential caching issues and incorrect file paths. After troubleshooting, he successfully configured the application to render the correct views.\par
+* Implementation of MVC architecture in Spring.\par
+\par
+Understanding MVC and Database Connectivity in Spring\par
+Kartikey provided an overview of the MVC architecture, detailing how the model, view, and controller interact within a Spring application. He explained the process of configuring database credentials and the significance of including necessary dependencies for MySQL connectivity. Additionally, he mentioned the use of JDBC for executing database queries.\par
+\par
+Code Implementation for Hobby Management\par
+Kartikey explained the process of using a JDBC template to retrieve hobbies from a database, highlighting the necessity of creating a row mapper for object mapping. He also noted the requirement to annotate the hobby class with `@Service` to ensure it is recognized by Spring for business logic. Additionally, he mentioned the need to set up a global URI for the hobby controller to facilitate fetching all hobbies.\par
+\par
+Debugging Application Configuration\par
+Kartikey addressed a problem with configuring the data source URL in the application, which resulted in an error. He highlighted the need to verify the driver class and check for typos. After making adjustments, he successfully established a connection to the database and confirmed that the application was able to retrieve data correctly.\par
+\par
+Understanding the Flow of Hobby Management in Spring\par
+Kartikey Singh provided an overview of the data flow in the hobby management application, emphasizing the transition from earlier methods to a more streamlined approach using model maps. He explained how the application recognizes GET requests and how the view rendering process works, including the configuration in application.properties. The discussion also touched on the implementation of the "add hobby" functionality and the necessary changes to the request mappings.\par
+* Handling of JSP files and view rendering in Spring MVC.\par
+\par
+\par
+April 07,2025\par
+Summary:\par
+\par
+The training session provided an in-depth exploration of the Spring framework, led by Kartikey Singh. Participants learned how to initiate a new project using start.spring.io, with a focus on configuration through Maven and Java. Key concepts such as annotations like @Component and @SpringBootApplication were discussed, emphasizing their roles in managing application context and beans. A practical example involving a calculator interface illustrated how Spring facilitates object creation and management, while the importance of package structure for effective bean scanning was also highlighted.\par
+\par
+Kartikey elaborated on dependency injection, detailing the use of the `@Autowired` annotation for automatic wiring of dependencies. He demonstrated various methods of dependency injection, including field and setter injection, and discussed the preferred approach of constructor injection, particularly in scenarios with multiple bean implementations. The session covered the lifecycle of beans within the Spring context, including the use of @PostConstruct and @PreDestroy annotations for managing operations during bean creation and destruction. Kartikey concluded by encouraging participants to complete their assignments by the end of the day, reinforcing the foundational concepts necessary for future work with the Spring framework.\line\line\line Chapters & Topics:\par
+\par
+Spring Framework Overview\par
+Kartikey Singh introduced the Spring framework, demonstrating how to generate a new Spring project through start.spring.io. He highlighted the use of Maven and Java, and explained the significance of annotations such as @Component for managing beans. The session included practical examples of implementing a simple calculator interface and how Spring handles bean management.\par
+* Spring Framework Overview\par
+\par
+Implementation of Calculator Dependency\par
+Kartikey outlined a strategy for implementing a calculator dependency, emphasizing the benefits of flexibility in method usage. He proposed creating multiple classes with different implementations, naming them Babul, Nanjini, and Primeshwar. The discussion included troubleshooting an error related to a null calculator instance and the need for proper visibility to Spring.\par
+\par
+Dependency Injection in Spring\par
+Kartikey explained the process of dependency injection in Spring, highlighting the `@Autowired` annotation's role in automatically wiring dependencies. He demonstrated both field and setter injection, noting that the presence of a constructor affects how dependencies are resolved. Kartikey emphasized that constructor injection is the recommended approach, as it ensures dependencies are available immediately upon object creation.\par
+* Dependency Injection and its Variations\par
+\par
+Dependency Injection Techniques in Java\par
+Kartikey explained the concept of dependency injection, highlighting the use of constructor injection and the challenges that arise when multiple beans are present. He illustrated how to specify a primary bean to avoid ambiguity and introduced the qualifier annotation as a way to select specific implementations. This allows for flexibility in managing multiple implementations of a given interface.\par
+\par
+Understanding Spring Framework Concepts\par
+Kartikey Singh provided an overview of essential Spring Framework concepts, including beans, Inversion of Control (IoC), and dependency injection. He explained that Spring manages beans within an application context, allowing developers to avoid manual management. Additionally, he discussed the differences between singleton and prototype scopes, emphasizing how these scopes affect bean instantiation and lifecycle.\par
+* Spring Bean Scopes: Singleton vs. Prototype\par
+\par
+Spring Framework Basics and Lifecycle\par
+Kartikey provided an overview of the Spring framework's bean lifecycle, detailing the process from application startup to bean destruction. He emphasized the importance of the @PostConstruct and @PreDestroy annotations for executing specific operations during the bean's lifecycle. Additionally, he encouraged participants to review the concepts covered and complete their assignments by the end of the day.\par
+* Bean Lifecycle Management\line\line\line April 04,2025\line Summary:\par
+\par
+The training session focused on Spring Boot, beginning with a review of previous topics and participant experiences. Kartikey Singh outlined the session's structure, emphasizing the importance of foundational knowledge before advancing to application development. Hands-on coding was a key component, where Kartikey addressed specific coding issues, such as the use of hidden fields in forms and the limitations of HTTP methods, confirming that only GET and POST are applicable. The session included preparations for running the application, ensuring all necessary components were in place.\par
+\par
+Further discussions revolved around the implementation of user login functionality, where Kartikey detailed the creation of a login page, the necessary form elements, and the process for authenticating users. He explained the significance of application sessions, noting that a new session is generated with each user login, which is crucial for personalizing user experiences. Additionally, Kartikey addressed challenges encountered in the design interface, particularly regarding item addition and editing options, while also highlighting the need for a logout functionality and the management of unique sessions through servlet context.\line\line\line Chapters & Topics:\par
+\par
+Training Session on Spring Boot\par
+Kartikey Singh initiated a training session on Spring Boot, asking participants about their previous experience with the framework. The session was structured to cover foundational concepts before moving on to application development in the following weeks. Participants were engaged in troubleshooting code issues and discussing the functionality of various components within the Spring framework.\par
+* Overview of Spring Boot and its applications.\par
+\par
+Training Session Updates and Code Review\par
+Kartikey identified a problem with passing an ID during an update operation, leading to a number format exception. He and an unknown speaker worked through the error, determining that a blank string was being sent instead of a valid ID. Prasanna confirmed that all participants had seen the movie, which was relevant to their discussion.\par
+\par
+Implementation of Login Functionality\par
+Kartikey outlined the steps to add a login functionality to their application, starting with the creation of a login page and form. He emphasized the importance of user authentication and proposed a method to check if a user is authenticated. Additionally, he mentioned the need to maintain a session for authenticated users.\par
+* Development of a login functionality for the application.\par
+\par
+Understanding Application Sessions\par
+Kartikey Singh discussed how application sessions function, noting that a fresh session is initiated upon user login. He illustrated this with examples, such as how platforms like Facebook store user-specific information to enhance personalization. The session ID plays a crucial role in fetching relevant details and displaying targeted advertisements to users.\par
+\par
+Application Logic Development\par
+Kartikey detailed the steps for creating a login feature in the application, including setting up username and password fields. He explained how to verify user credentials through a database query and handle incorrect login attempts by returning a specific message to the user.\par
+\par
+Training Session Technical Discussion\par
+Kartikey encountered difficulties while attempting to add items in the design interface, expressing frustration over the lack of options available. He suggested using a forward method to resolve the issue and shared keyboard shortcuts for commenting and uncommenting code in Eclipse. \par
+\par
+Implementation of Login and Session Management\par
+Kartikey outlined the steps to set up a login page that initializes a session when a user logs in. He explained how to manage unique sessions using servlet context and discussed the importance of adding a logout feature to invalidate sessions. Additionally, he mentioned the need for a back button and a home button for navigation.\par
+* Creation of a logout feature to manage user sessions.\line\line April 03,2025\line\line Summary:\par
+\par
+The session focused on addressing project issues and enhancing understanding of JavaServer Pages (JSP) and related technologies. Kartikey presented a solution to a connection problem by creating a new Maven project, demonstrating how the issue stemmed from a null connection object due to Java's inability to find a suitable driver. By modifying the method to ensure the correct driver was loaded, he successfully ran the application on Tomcat, confirming that the adjustments resolved the initial problem.\par
+\par
+Additionally, Kartikey provided an in-depth overview of various JSP tags and directives, including scriptlets, declarations, expressions, and their implementation in code. He demonstrated how to set properties in a JSVB object and addressed common errors, such as improperly closed syntax and null pointer exceptions when accessing beans. The session also covered the required attributes for JSP pages, including dynamic page inclusion and parameter passing, as well as the roles of implicit objects like 'out', 'request', 'response', 'session', and 'application' in JSP development.\line\line Chapters & Topics:\par
+\par
+Troubleshooting Project Issues\par
+Kartikey identified and fixed a problem in their project by creating a new Maven project. He detailed the process of setting up the project and highlighted that the previous issue stemmed from a null connection object due to Java not finding a suitable driver. The solution involved adjusting the method for establishing the database connection.\par
+\par
+Understanding JSP Tags and Directives\par
+Kartikey Singh provided an overview of JSP tags, including scriptlets, declarations, expressions, and directives. He explained how to execute Java code within JSP using scriptlets and how to declare methods and variables. Additionally, he introduced directives that guide the behavior of JSP pages, such as include and taglib.\par
+\par
+JSVB Property Setting and Error Handling\par
+Kartikey explained the process of creating a JSVB object and setting its properties, such as "name" and "added by." He encountered an error regarding syntax closure but clarified how to properly close the object. Additionally, he engaged the group by asking for examples of hobbies related to the properties being set.\par
+\par
+JSP Page Inclusion and Request Handling\par
+Kartikey explained the process of including JSP pages and passing parameters using the request object. He demonstrated how to use the `jsp:param` tag to share values between pages and highlighted the difference between using include directives and forwarding requests. He also mentioned the existence of reserved objects in JSP that provide automatic access to certain variables.\par
+* Discussion on the structure of JSP pages.\par
+* Implementation of new features in the application.\par
+\par
+Understanding JSP Implicit Objects and Scriptlets\par
+Kartikey Singh elaborated on JSP implicit objects such as 'out', 'request', 'response', 'session', and 'application', detailing their functions and usage in web applications. He mentioned that the 'application' object is created once by the web container and can store global items, while the 'page context' is specific to individual pages. Additionally, he listed various scriptlets and actions that are essential for JSP coding.\line\line April 02,2025\line\line Summary:\par
+\par
+The training session focused on the development of a servlet web application, with Kartikey Singh providing detailed guidance on essential configurations and structures. He emphasized the importance of the `pom.xml` file, particularly in setting the Java version to 1.8 and including the necessary servlet dependencies. The session covered the role of the `web.xml` file as a deployment descriptor and addressed common issues related to server compatibility with Tomcat. Kartikey demonstrated how to run the servlet, troubleshoot errors, and transition from a console application to a web application, highlighting the significance of updating package structures and resolving MySQL dependencies.\par
+\par
+Further, Kartikey introduced Java Server Pages (JSP) and the JavaScript Tag Library (JSTL), explaining their roles in enhancing web development by allowing the integration of Java code within HTML. He discussed the implementation of a hobby list feature, detailing the necessary headers and proposing the use of a tag library in React for dynamic data handling. The session included a demonstration of mapping URL patterns to HTTP methods and the use of request dispatchers to improve user experience. Overall, Kartikey provided a comprehensive overview of servlet development, JSP integration, and effective data management strategies.\line\line Chapters & Topics:\par
+\par
+Training Session on Servlets\par
+Kartikey Singh led a training session focused on servlet web applications, emphasizing the importance of proper configuration in the `pom.xml` file, such as setting the Java version to 1.8 and including the servlet dependency. He demonstrated how to create a new servlet and explained the role of the `web.xml` file as a deployment descriptor. The session included troubleshooting steps for resolving issues with server compatibility and servlet execution.\par
+* Setting up the Java version and dependencies for the servlet project.\par
+* Creating and configuring servlets to handle requests.\par
+* Running the servlet application on Tomcat.\par
+\par
+Java Servlets and JSPs Overview\par
+Kartikey elaborated on the historical context of Java servlets, noting that they were initially designed for creating HTML pages. He demonstrated how to create a simple HTML page and explained the redundancy of embedding HTML in Java code. To address this, he introduced JSPs, which allow for better separation of logic and presentation in web applications.\par
+\par
+Building a Web Application from Existing Code\par
+Kartikey detailed the steps to convert a console application into a web application, emphasizing the need for a hobby class and service class. He mentioned updating the package structure and resolving MySQL dependencies in the pom.xml file. Additionally, he addressed some errors encountered during the process and how to eliminate them.\par
+* Integrating MySQL for database connectivity in the servlet application.\par
+\par
+URL Mapping and Servlet Methods\par
+Kartikey explained the process of mapping multiple HTTP methods to a single servlet using specific URL patterns. He focused on printing the servlet path and retrieving a list of hobbies from the hobby service. Additionally, he addressed the need to remove scanners from the code to avoid complications.\par
+\par
+JSP and JSTL Overview\par
+Kartikey Singh initiated a discussion on creating a CSV file called hobbylist.jsp and inquired about the participants' familiarity with Angular and React frameworks. He explained the concepts of JSP and JSTL, highlighting their importance in modern web development. Kartikey emphasized that JSPs are HTML pages that can incorporate Java code, while JSTL provides tags to enhance JSP functionality.\par
+\par
+Development of Hobby List Feature\par
+Kartikey outlined the development process for a hobby list feature, specifying the headers such as ID, name, and added by. He explained the use of a tag library to dynamically generate table rows in React, and discussed the importance of mapping the data to an object that the JSP can understand. Additionally, he mentioned the use of a request dispatcher to forward requests to the appropriate page.\line\line April 01,2025\line Summary:\par
+\par
+The session focused on enhancing programming skills through effective code organization and the use of advanced Java features. Kartikey Singh emphasized the significance of the MVC pattern and demonstrated how to utilize JDBC and functional interfaces to improve code readability and maintainability. He provided practical examples using the Collections and Streams API, illustrating how streams can streamline operations, enhance memory efficiency, and simplify code. The discussion included sorting lists, checking conditions on list elements, and filtering data, all while highlighting the performance benefits of using streams.\par
+\par
+Additionally, Kartikey introduced the Streams API, detailing its components, operations, and the concept of stream pipelines, including terminal and intermediate operations. He stressed the importance of lazy evaluation in stream processing and demonstrated how to create and manipulate maps using the Stream API, including handling duplicate keys with `Collectors.toMap`. The session also covered the necessity of overriding the `hashCode` and `equals` methods in complex classes for proper element identification in collections. Finally, Kartikey initiated a discussion on creating a Maven project, particularly a dynamic web project, and outlined the structure of a servlet, underscoring its foundational role in web application development.\line\line Chapters & Topics:\par
+\par
+Training on JDBC, Functional Interfaces, and Streams API\par
+Kartikey Singh reviewed concepts from previous sessions, particularly JDBC and functional interfaces, and highlighted the significance of clean code organization. He demonstrated how to structure code using separate methods for clarity and introduced the Collections and Streams API, explaining the efficiency and simplicity of using streams for data manipulation.\par
+\par
+Sorting and Analyzing Lists in Programming\par
+Kartikey explained how to sort a list of numbers without altering the original list, utilizing the collections.sort method. He also presented a method to determine if all numbers in the list are odd, showcasing both a traditional approach and a more modern stream-based solution. The discussion included the use of predicates and boolean return values to validate the conditions.\par
+\par
+Hobbies Class Implementation and Stream Operations\par
+Kartikey presented a class named Hobby, detailing its attributes and providing examples such as writing and walking. He explained how to filter outdoor hobbies from a list and print their names using Java's stream operations, emphasizing the use of method references for cleaner code. \par
+\par
+Introduction to Streams API\par
+Kartikey Singh introduced the Streams API, highlighting its three main components: the source collection, intermediate operations, and terminal operations. He explained the difference between terminal operations, which produce a result, and intermediate operations, which return a stream for further processing. Additionally, he discussed lazy evaluation, noting that operations are executed only when a terminal operation is invoked.\par
+* Introduction to the Streams API and its benefits.\par
+* Creating and managing collections using the Streams API.\par
+\par
+Understanding Distinct Elements and Map Operations in Java\par
+Kartikey Singh explained how to find unique elements in a list of complex objects by overriding the `hashCode` and `equals` methods. He illustrated this with a coding example, showing how the absence of these methods prevents the identification of duplicates. The discussion also included the use of maps to count occurrences of hobbies, emphasizing the need for proper implementation to achieve accurate results.\par
+* Implementation of equals and hashCode methods in custom classes.\par
+\par
+Stream API and Map Operations\par
+Kartikey Singh provided a detailed overview of creating maps from lists using the Stream API, specifically focusing on the `Collectors.toMap` method. He highlighted the need to manage duplicate keys by specifying merging logic. The discussion included practical coding examples, such as filtering map entries to find hobbies with single counts, and emphasized the use of entry sets for operations on maps.\par
+\par
+Application Development and Servlet Overview\par
+Kartikey Singh led a session on developing a Maven project, focusing on creating a dynamic web project and a servlet. He explained the role of servlets in web environments and highlighted their significance in the course material. Issues with dependencies and server execution were encountered, prompting a discussion on the necessity of a server like Tomcat for servlet implementation.\par
+* Working with Maven projects and servlets in Java.\line\line\par
+}
+ 
