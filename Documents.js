@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/Documents.css'; // Ensure your CSS path is correct
+import {handleLogout} from "./Logout";
+import { useNavigate } from 'react-router-dom';
+import '../styles/Documents.css';
 
 function Documents() {
   const [documents, setDocuments] = useState([]);
   const [username, setUsername] = useState('');
   const [selectedFile, setSelectedFile] = useState(null);
+const navigate = useNavigate();
 
   // Fetch username and documents on component mount
   useEffect(() => {
@@ -68,6 +71,9 @@ function Documents() {
     <div className="documents-container">
       <div className="documents-header">
         <h2>{username ? `${username}'s Documents` : 'Your Documents'}</h2>
+        <div style={{display:'flex',justifyContent:'flex-end',padding:'5px'}}>
+                 <button onClick={() => handleLogout(navigate)}>Logout</button>
+        </div>
       <div className="upload-section">
   <label htmlFor="file-upload" className="file-label">
     Choose File
@@ -84,15 +90,36 @@ function Documents() {
 
       </div>
 
-      <ul className="documents-list">
-        {documents.map(doc => (
-          <li key={doc.id} className="document-item">
-            <div className="doc-name">{doc.name}</div>
-            <div className="doc-type">{doc.nodeType}</div>
-            <div className="doc-mime">{doc.content?.mimeType || 'N/A'}</div>
-          </li>
-        ))}
-      </ul>
+      <table className="documents-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>MIME Type</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {documents.map(doc => (
+      <tr key={doc.id}>
+        <td>{doc.name}</td>
+        <td>{doc.nodeType}</td>
+        <td>{doc.content?.mimeType || 'N/A'}</td>
+        <td>
+          <a
+            href={`http://localhost:8081/download?nodeId=${doc.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-link"
+          >
+            Download
+          </a>
+        </td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
     </div>
   );
 }
